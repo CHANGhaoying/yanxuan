@@ -1,0 +1,52 @@
+.kanjia{  
+    background:#fff;
+    &>p{
+        text-align: center;
+        padding: rem(40) 0;
+        i{
+            margin-left: rem(10);
+            font-size:rem(40);
+        }
+    }
+    ul{
+        li{
+            border-top:2px solid #f5f5f5;
+            display: flex;
+            img{
+                margin: rem(20) rem(30) rem(15);
+                width:rem(290);
+                height: rem(290);
+            }
+            dl{
+                width:rem(700);
+                padding: rem(40) 0 rem(30);
+                dd{
+                    font-size: rem(35);
+                    color: #999;
+                    margin: rem(20) 0 rem(45);
+                    text-overflow:ellipsis;
+                    overflow: hidden;
+                    white-space:nowrap; 
+                }
+                dt:last-child{
+                    display: flex;
+                    p{
+                        flex: 1;
+                        font-size: rem(37);
+                        color: #999;
+                        span{
+                            display: block;
+                            
+                        }
+                    }
+                    p:first-child{
+                        color: #ab2b2b;
+                        span:last-child{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

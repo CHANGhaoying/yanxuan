@@ -1,0 +1,39 @@
+.tuijian{
+    background: #fff;
+    &>p{
+        text-align: center;
+        padding: rem(40) 0;
+        i{
+            margin-left: rem(10);
+            font-size: rem(40);
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap:wrap;
+        //padding-left:rem(35);
+        li{
+            margin: 0 0 rem(70) rem(35);
+           width:rem(485);
+
+            img{
+                width:100%;
+            }
+            span{
+                display: block;
+                margin:rem(15) 0;
+                color:#666;
+                font-size:rem(32);
+            }
+            p{
+                width:rem(485);
+                overflow:hidden; //超出的文本隐藏
+                text-overflow:ellipsis; //溢出用省略号显示
+                white-space:nowrap; //溢出不换行
+            }
+            p:last-child{
+                color: #ab2b2b;
+            }
+        }
+    }
+}

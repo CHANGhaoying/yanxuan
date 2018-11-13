@@ -1,0 +1,28 @@
+.jingxuan{
+    background: #fff;
+    margin: rem(35) 0;
+    &>p{
+        text-align: center;
+        padding: rem(40) 0;
+        i{
+            margin-left: rem(10);
+            font-size: rem(40);
+        }
+    }
+    ol{
+        display: flex;
+        overflow: auto;
+        li{
+            margin-left: rem(25);
+            img{
+                width:rem(920);
+            }
+            span{
+                display: block;
+                margin: rem(25) 0;
+                color:#666;
+                font-size:rem(32);
+            }
+        }
+    }
+}

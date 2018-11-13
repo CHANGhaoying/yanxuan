@@ -1,0 +1,13 @@
+.foot {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot li {
+  text-align: center;
+}
+
+.foot li span {
+  display: block;
+  font-size: rem(90);
+}

@@ -1,0 +1,45 @@
+.tuijian {
+  background: #fff;
+}
+
+.tuijian > p {
+  text-align: center;
+  padding: rem(40) 0;
+}
+
+.tuijian > p i {
+  margin-left: rem(10);
+  font-size: rem(40);
+}
+
+.tuijian ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tuijian ul li {
+  margin: 0 0 rem(70) rem(35);
+  width: rem(485);
+}
+
+.tuijian ul li img {
+  width: 100%;
+}
+
+.tuijian ul li span {
+  display: block;
+  margin: rem(15) 0;
+  color: #666;
+  font-size: rem(32);
+}
+
+.tuijian ul li p {
+  width: rem(485);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tuijian ul li p:last-child {
+  color: #ab2b2b;
+}

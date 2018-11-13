@@ -1,0 +1,84 @@
+.fenlei {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fenlei > header {
+  height: rem(185);
+  line-height: rem(185);
+  border-bottom: 1.5px solid #eee;
+  position: relative;
+}
+
+.fenlei > header input {
+  height: rem(84);
+  width: rem(700);
+  margin-left: rem(40);
+  border: 0;
+  background: #eee;
+  border-radius: rem(42);
+  outline: none;
+  padding-left: rem(75);
+}
+
+.fenlei > header span {
+  position: absolute;
+  left: rem(60);
+}
+
+.fenlei > section {
+  flex: 1;
+  display: flex;
+}
+
+.fenlei > section aside {
+  text-align: center;
+  width: rem(270);
+}
+
+.fenlei > section aside ol li {
+  padding: rem(28) 0;
+  margin: rem(30) 0;
+}
+
+.fenlei > section aside ol .active {
+  color: #ab2b2b;
+  border-left: 2px solid #ab2b2b;
+}
+
+.fenlei > section > div {
+  border-left: 3px solid #ddd;
+  flex: 1;
+  height: 100%;
+}
+
+.fenlei > section > div > div {
+  background: #3e3;
+  height: rem(320);
+  color: orangered;
+}
+
+.fenlei > section > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fenlei > section > div > ul li {
+  width: 33%;
+  text-align: center;
+  margin-top: rem(25);
+}
+
+.fenlei > section > div > ul li a {
+  display: inline-block;
+}
+
+.fenlei > section > div > ul li a img {
+  width: rem(170);
+}
+
+.fenlei > section > div > ul li a span {
+  display: block;
+  margin-top: rem(15);
+}

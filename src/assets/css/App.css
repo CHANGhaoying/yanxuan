@@ -1,0 +1,283 @@
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  font-size: 0.59259rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.index {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.index > section {
+  flex: 1;
+  overflow: auto;
+}
+
+.index > section #banner .swiper-container {
+  z-index: -1;
+}
+
+.index > section #banner .swiper-container .swiper-slide {
+  height: 15.40741rem;
+}
+
+.index > section #banner .swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.index > section div.box {
+  background: #f5f5f5;
+  border: #fff 1px solid;
+}
+
+.index > section div.box .mynav {
+  padding: 0.96296rem 0;
+  margin-top: -0.66667rem;
+  background: #fff;
+  padding-bottom: 1.03704rem;
+  display: flex;
+  font-size: 0.59259rem;
+  justify-content: space-around;
+  border-radius: 15% 15% 0 0;
+}
+
+.index > section div.box .mynav li {
+  text-align: center;
+}
+
+.index > section div.box .mynav li i {
+  display: block;
+  font-size: 1.18519rem;
+  margin-bottom: 0.14815rem;
+}
+
+.index > section div.box div.img {
+  margin: 0.51852rem 0 0.22222rem;
+}
+
+.index > section div.box div.img img {
+  width: 100%;
+}
+
+.index > footer {
+  height: 2.37037rem;
+  background: #e3a;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot li {
+  font-size: 0.59259rem;
+  text-align: center;
+}
+
+.foot li span {
+  display: block;
+  font-size: 1.33333rem;
+}
+
+.kanjia {
+  font-size: 0.59259rem;
+  background: #fff;
+}
+
+.kanjia > p {
+  text-align: center;
+  padding: 0.59259rem 0;
+}
+
+.kanjia > p i {
+  margin-left: 0.14815rem;
+  font-size: 0.59259rem;
+}
+
+.kanjia ul li {
+  border-top: 3px solid #f5f5f5;
+  display: flex;
+}
+
+.kanjia ul li img {
+  margin: 0.2963rem 0.44444rem 0.22222rem;
+  width: 4.2963rem;
+  height: 4.2963rem;
+}
+
+.kanjia ul li dl {
+  width: 10.37037rem;
+  padding: 0.59259rem 0 0.44444rem;
+}
+
+.kanjia ul li dl dd {
+  font-size: 0.51852rem;
+  color: #999;
+  margin: 0.2963rem 0 0.66667rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.kanjia ul li dl dt:last-child {
+  display: flex;
+}
+
+.kanjia ul li dl dt:last-child p {
+  flex: 1;
+  font-size: 0.54815rem;
+  color: #999;
+}
+
+.kanjia ul li dl dt:last-child p span {
+  display: block;
+}
+
+.kanjia ul li dl dt:last-child p:first-child {
+  color: #ab2b2b;
+}
+
+.kanjia ul li dl dt:last-child p:first-child span:last-child {
+  color: #000;
+}
+
+.jingxuan {
+  font-size: 0.59259rem;
+  background: #fff;
+  margin: 0.51852rem 0;
+}
+
+.jingxuan > p {
+  text-align: center;
+  padding: 0.59259rem 0;
+}
+
+.jingxuan > p i {
+  margin-left: 0.14815rem;
+  font-size: 0.59259rem;
+}
+
+.jingxuan ol {
+  display: flex;
+  overflow: auto;
+}
+
+.jingxuan ol li {
+  margin-left: 0.37037rem;
+}
+
+.jingxuan ol li img {
+  width: 13.62963rem;
+}
+
+.jingxuan ol li span {
+  display: block;
+  margin: 0.37037rem 0;
+  color: #666;
+  font-size: 0.47407rem;
+}
+
+.tuijian {
+  font-size: 0.59259rem;
+  background: #fff;
+}
+
+.tuijian > p {
+  text-align: center;
+  padding: 0.59259rem 0;
+}
+
+.tuijian > p i {
+  margin-left: 0.14815rem;
+  font-size: 0.59259rem;
+}
+
+.tuijian ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tuijian ul li {
+  margin: 0 0 1.03704rem 0.51852rem;
+  width: 7.18519rem;
+}
+
+.tuijian ul li img {
+  width: 100%;
+}
+
+.tuijian ul li span {
+  display: block;
+  margin: 0.22222rem 0;
+  color: #666;
+  font-size: 0.47407rem;
+}
+
+.tuijian ul li p {
+  width: 7.18519rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tuijian ul li p:last-child {
+  color: #ab2b2b;
+}
+
+.fenlei {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fenlei > header {
+  height: 2.74074rem;
+  border-bottom: 1.5px solid #eee;
+}
+
+.fenlei > section {
+  border: 1px solid red;
+  flex: 1;
+  display: flex;
+}
+
+.fenlei > section aside {
+  border: 1px solid blue;
+  height: 400px;
+  width: 4rem;
+}
+
+.fenlei > section > div {
+  border: 1px solid yellow;
+  flex: 1;
+  height: 400px;
+}
+
+.fenlei > section > div > div {
+  background: #3e3;
+  height: 4.74074rem;
+  color: orangered;
+}
+
+.fenlei > section > div > ul li a img {
+  width: 2.51852rem;
+}
