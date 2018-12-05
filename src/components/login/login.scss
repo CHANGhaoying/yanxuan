@@ -1,0 +1,166 @@
+.login{
+  width:100%;
+  height:100%;
+  background:white;
+  padding:rem(40);
+}
+.login-head{
+  width:rem(300);
+  height:rem(250);
+  background:green;
+  color:white;
+  font-size:rem(60);
+  font-family:"微软雅黑 Light";
+  text-align: center;
+  border-radius:rem(20);
+  margin:rem(130) auto;
+  line-height: rem(250);
+}
+%samep{
+  width:100%;
+  padding:rem(20) 0;
+  border-bottom:1px solid #e9e9e9;
+}
+%sameinput{
+  height:rem(150);
+  font-size:rem(40);
+  border:none;
+  outline:none;
+  background:none;
+}
+.denglu{
+  width: 100%;
+  padding:rem(100) rem(50);
+  &>p:first-child,&>p:nth-child(2){
+    @extend %samep;
+    input{
+      width:100%;
+      @extend %sameinput;
+    }
+  }
+  &>p:nth-child(3){
+    width:100%;
+    line-height:rem(100);
+    span{
+      font-size: rem(30);
+      color:red;
+    }
+  }
+  &>p:nth-child(4){
+    width:100%;
+    line-height:rem(150);
+    background:rgb(151, 23, 44);
+    border-radius:rem(80);
+    text-align:center;
+    font-size:rem(50);
+    letter-spacing:rem(40);
+    color:white;
+    margin-top:rem(200);
+  }
+  &>p:last-child{
+    width:100%;
+    line-height:rem(100);
+    text-align:center;
+    font-size:rem(35);
+    padding-top:rem(20);
+    color: blue;
+  }
+
+}
+.zhuce{
+  width:100%;
+  padding:0 rem(50);
+  &>p:first-child{
+   @extend %samep;
+    input{
+      width:100%;
+      @extend %sameinput;
+    }
+  }
+  &>p:nth-child(2){
+    @extend %samep;
+    display:flex;
+    align-items:center;
+    input{
+      width:30%;
+      @extend %sameinput;
+    }
+    span{
+      display:inline-block;
+      width:70%;
+      height:rem(130);
+      border:1px solid #e9e9e9;
+      border-radius:rem(60);
+      overflow:hidden;
+      img{
+        width:98%;
+        height:98%;
+      }
+    }
+  }
+  &>p:nth-child(3){
+    @extend %samep;
+    display:flex;
+    align-items:center;
+    input{
+      width:70%;
+      @extend %sameinput;
+    }
+    button{
+      display:inline-block;
+      width:30%;
+      height:rem(90);
+      border:1px solid #e9e9e9;
+      border-radius:rem(60);
+      font-size:rem(30);
+      outline: none;
+      
+    }
+  }
+  &>p:nth-child(4){
+    @extend %samep;
+    input{
+      width:100%;
+      @extend %sameinput;
+    }
+  }
+  &>p:nth-child(5){
+    width:100%;
+    line-height:rem(100);
+    span{
+      font-size: rem(30);
+      color:red;
+    }
+  }
+  &>p:nth-child(6){
+    margin-top:rem(20);
+    width:100%;
+    height:rem(100);
+    line-height:rem(100);
+    font-size:rem(30);
+    text-align:center;
+    &>span{
+      color:blue;
+    }
+  }
+  &>p:nth-child(7){
+    width:100%;
+    line-height:rem(150);
+    background:rgb(151, 23, 44);
+    border-radius:rem(80);
+    text-align:center;
+    font-size:rem(50);
+    letter-spacing:rem(40);
+    color:white;
+  }
+  &>p:nth-child(8){
+    width:100%;
+    line-height:rem(100);
+    text-align:center;
+    font-size:rem(35);
+    padding-top:rem(20);
+    color: blue;
+  }
+
+
+}

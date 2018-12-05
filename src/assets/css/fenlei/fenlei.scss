@@ -44,8 +44,9 @@
         }
         &>div{
             overflow: auto;
+            border-left:2px solid #ddd;
             &>div{
-                border-left:2px solid #ddd;
+                
                 width:rem(810);
                 &>div{
                     height: rem(320);
@@ -94,7 +95,7 @@
             }
         }
     }
-    footer{
-        background: #3e3;
-    }
+    // footer{
+    //     background: #3e3;
+    // }
 }

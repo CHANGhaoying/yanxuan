@@ -4,14 +4,24 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './assets/css/App.scss'
-//import '../static/font_4neoqbbx4qm/iconfont.css'
-import '../static/font_905546_62aepwb89d/iconfont.css'
+
+import '../static/font_905546_hut0ul6udw/iconfont.css'
 import './assets/css/swiper.min.css' 
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 import store from './store.js'
 /* eslint-disable no-new */
+
+
+
+import axios from 'axios'
+import Qs from 'qs'
+//QS是axios库中带的，不需要我们再npm安装一个
+ 
+Vue.prototype.axios = axios;
+Vue.prototype.qs = Qs;
+
 new Vue({
   el: '#app',
   router,

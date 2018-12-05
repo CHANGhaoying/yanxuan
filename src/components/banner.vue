@@ -25,33 +25,31 @@ export default {
 	},
 	computed:{
 	},
-    created() {
+    mounted() {
 	  Axios.get("https://api.it120.cc/small4/banner/list").then(res => {
 		//console.log(res.data.data)
 		let { data } = res.data
 		this.banner = data
-		 
+		this.myswiper()
 	  });
-	 
+
 	  
 	},
-	mounted() {
-		//console.log(this.$refs.mySwiper.swiper)
-		new Swiper('.swiper-container', {
-				
+	methods: {
+		myswiper(){
+			new Swiper('.swiper-container', {
 				autoplay:{
-                    disableOnInteraction: false,
-                    delay:2000
+					disableOnInteraction: false,
+					delay:2000         
 				},
 				pagination: {
-	　　　　　　　　el: '.swiper-pagination',
-	　　　　　　　　clickable: true,
-	　　　　　　},
+			　　　　　　　　el: '.swiper-pagination',
+			　　　　　　　　clickable: true,
+			　　　　　　},
 				observer:true,//修改swiper自己或子元素时，自动初始化swiper 
-				observeParents:true,//修改swiper的父元素时，自动初始化swiper 
-				
-				
-			})	
+				observeParents:true,//修改swiper的父元素时，自动初始化swiper 			
+			})
+		}
 	},
 	
 }

@@ -21,7 +21,6 @@ a{
 li{
     list-style: none;
 }
-
 @import './index/index.scss';
 @import './index/foot.scss';
 @import './index/kanjia.scss';
@@ -29,3 +28,12 @@ li{
 @import './index/tuijian.scss';
 @import './fenlei/fenlei.scss';
 @import './cart/cart.scss';
+@import './personal/personal.scss';
+@import './detail/detail.scss';
+@import '../../views/order/sureorder.scss';
+@import '../../views/myadr/myadr.scss';
+@import '../../views/myadr/addadr.scss';
+@import '../../components/login/login.scss';
+@import '../../views/pay/pay.scss';
+@import '../../views/myod/myod.scss';
+@import '../../views/myod/df.scss';

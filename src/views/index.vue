@@ -2,7 +2,7 @@
 <div class='index'> 
     
     <section>
-		<Banner></Banner>
+		<banner></banner>
 		<div class='box'>
 			<my-nav></my-nav>
 			<div class="img">
@@ -50,7 +50,7 @@ export default {
 	},
 	mounted() {
 		Axios.get("https://api.it120.cc/small4/shop/goods/category/all").then(res => {
-			console.log(res.data)
+			//console.log(res.data)
 			
 			
 		});

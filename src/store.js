@@ -5,18 +5,25 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store ({
     state: {
-        banner: [],
-        list: [1,2]
+        list: [],
+        detailData: [],
+        size: [],
+        
     },
     mutations: {
-        banner(state,load) {
-            state.banner = load;
-            
-        },
+        
         list(state, load) {
             state.list = load;
            
         },
+        detail(state,load) {
+            state.detailData = load;
+            
+        },
+        size(state,load){
+            state.size = load;
+        },
+        
     },
 });
 export default store

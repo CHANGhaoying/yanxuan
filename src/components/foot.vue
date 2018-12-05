@@ -1,29 +1,57 @@
 <template>
     <ol class="foot">
-        <li>
+        <li @click='peer'>
             <router-link to='/'>
                 <span class="iconfont icon-shouye"></span>
-            </router-link>首页
+                首页
+            </router-link>
         </li>
-        <li>
+        <li @click='peer'>
             <router-link to='/fenlei'>
                 <span class="iconfont icon-fenlei"></span>
-            </router-link>分类
+                分类
+            </router-link>
         </li>
-        <li>
+        <li @click='peer'>
             <router-link to='/cart'>
                 <span class="iconfont icon-gouwuche"></span>
-            </router-link>购物车
+                购物车
+            </router-link>
         </li>
-        <li>
-            <router-link to='#'>
+        <li @click='toPersonal'>
+            <router-link to=''>
                 <span class="iconfont icon-geren11"></span>
-            </router-link>个人
+                个人
+            </router-link>
         </li>
     </ol>
 </template>
 
-<style lang="scss">
-</style>      
+<script>
+import myvue from '../myvue'
+export default {
+    methods:{
+        peer() {
+            myvue.$emit('peer')
+        },
+        toPersonal() {
+            this.peer()
+            let log = sessionStorage.getItem('log')
+            if(!log) {
+                if(confirm('您还没有登录，去登录？')){
+                    this.$router.push('/login')
+                }
+                else{
+                    this.$router.push('/personal')
+                }
+            }
+        },
+
+
+
+    }
+}
+</script>
+   
     
 

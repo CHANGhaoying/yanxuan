@@ -1,8 +1,73 @@
 .cart{
-    &>p{
-        text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    section{
+        flex: 1;
+        overflow: auto;
+        &>p{
+            text-align: center;
+        }
+        &>p:first-child{
+            height: rem(185);
+            padding-top: rem(100);
+        }
+        &>div:nth-child(2){
+            background: #f7f7f7;
+            text-align: center;
+            color:#9d9d9d;
+            padding: rem(110);
+            img{
+                width: 100%;
+                margin-bottom: rem(50);
+            }
+            
+        }
+        &>p:nth-child(3){
+            padding: rem(70) 0;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: rem(495);
+                margin: 0 0 rem(80) rem(30);
+                position: relative;
+                img{
+                    width: 100%;
+                    height: rem(495);
+                }
+                p:nth-child(3){
+                    padding: 0 rem(15);
+                    display: flex;
+                    justify-content: space-between;
+                    span:first-child{
+                        color: #c66b68;
+                    }
+                    span:last-child{
+                        color:#9d9d9d;
+                        font-size: rem(35);
+                    }
+                }
+                p:nth-child(2) {
+                    
+                    padding: rem(25);
+                }
+                p:last-child{
+                    width:100%;
+                    position: absolute;
+                    height: rem(100);
+                    top:rem(396);
+                    font-size: rem(35);
+                    background: #f1eae2;
+                    line-height: rem(100);
+                    padding-left: rem(10);
+                    color:#ded0b6;
+                }
+            }
+        }
     }
-    &>div{
-        background: #f7f7f7;
-    }
+    // footer{
+    //     background:#c66b68;
+    // }
 }

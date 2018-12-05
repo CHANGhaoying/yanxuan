@@ -51,10 +51,9 @@ export default {
         }
     },
     mounted() {
-        console.log(this.$store.state.list)
         Axios.get('https://api.it120.cc/small4/shop/goods/category/all').then(res => {
             let {data} = res.data
-            console.log(data)
+            
             this.allList = data;
             this.list = data;
             let FL = data.filter(i => {

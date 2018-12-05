@@ -1,11 +1,16 @@
 .foot{
         display: flex;
         justify-content: space-around;
+        padding: rem(15) 0;
+        height: 100%;
         li{
             text-align: center;
-            span{
+            a{
                 display: block;
-                font-size: rem(90);
+                span{
+                    display: block;
+                    font-size: rem(90);
+                }
             }
         }
     }
